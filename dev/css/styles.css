@@ -75,15 +75,26 @@ body {
   top: 50%;
   left: 0;
   margin-top: -3px;
-  margin-left: 6px;
+  margin-left: 7px;
   transform-origin: 100%;
   transform: rotate(0deg);
+
+  &::before {
+    display: block;
+    transform-origin: 10%;
+    transform: rotateZ(270deg);
+  }
 }
 
 .hand-hours {
   width: calc(--var(--w-cl-hand) - 10%);
   height: calc(var(--h-cl-hand) + 2px);
-  margin-left: 12%;
+  margin-left: 13%;
+
+  &::before {
+    transform-origin: 13%;
+    transform: rotateZ(270deg);
+  }
 }
 
 .hand-seconds {
